@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    background: #3a3a3a;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: rgba(58, 58, 58, 0.8);
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px 100px;
+}
+
+.logo img {
+    width: 130px;
+}
+
+header {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#menu {
+    font-size: 30px;
+    display: none;
+}
+
+.bars {
+    display: flex;
+}
+
+.bars a {
+    padding-bottom: 2px;
+    margin-inline: 5px;
+    display: inline-block;
+}
+
+.bars a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.bars a i {
+    color: #000;
+    font-size: 17px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    color: #000;
+    padding-bottom: 2px;
+}
+
+nav ul a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.banner {
+    background: url(../assets/images/slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.banner .banner-title {
+    font-size: 25px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 15px 0 30px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 35px;
+}
+
+.boxes .box img {
+    width: 100%;
+}
+
+.box .content h3 {
+    font-size: 18.5px;
+    margin: 24px 0 10px;
+}
+
+.box .content a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0067b8;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.box .content a:hover i {
+    padding-left: 8px;
+}
+
+.box .content a i {
+    font-size: 15px;
+}
+
+.game {
+    background: url(../assets/images/xbox.png);
+    background-repeat: no-repeat;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 50px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.game .game-content,
+.carbon .carbon-content {
+    width: 40%;
+}
+
+.game .game-content h2,
+.carbon .carbon-content h2 {
+    margin-bottom: 10px;
+}
+
+.carbon .carbon-content h2,
+.carbon .carbon-content p {
+    color: #fff;
+}
+
+.carbon .carbon-content .btn2 {
+    background: #dededd;
+    color: #000;
+}
+
+.game .game-content p,
+.carbon .carbon-content p {
+    margin-bottom: 40px;
+}
+
+.carbon {
+    background: url(../assets/images/carbon.jpg);
+    background-repeat: no-repeat;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 50px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 0;
+}
+
+.socials h2 {
+    font-size: 14px;
+}
+
+.socials .social-icon {
+    display: flex;
+}
+
+.socials .social-icon div:nth-child(2) {
+    margin-inline: 14px;
+}
+
+footer {
+    background: #f2f2f2;
+    width: 100%;
+    padding: 50px 40px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.footer-container ul h4 {
+    font-size: 15px;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+}
+
+.footer-container ul li {
+    margin: 8px 0;
+}
+
+.footer-container ul a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-size: 13px;
+}
+
+.footer-container-2 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container-2 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container-2 ul .fa-globe {
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.footer-container-2 ul li {
+    margin: 0 10px;
+}
+
+.footer-container-2 ul a {
+    text-decoration: none;
+    color: #3a3a3a;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        margin: 30px 50px;
+    }
+    #menu {
+        display: block;
+    }
+    nav ul {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        border-right: 1px solid #ccc;
+        background: rgba(241, 241, 241, 0.8);
+        padding: 70px 30px 0;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+    nav ul.active {
+        transform: translateX(-20px);
+    }
+    nav ul li {
+        padding: 10px;
+    }
+    nav ul li:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+    .boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .game .game-content p {
+        display: none;
+    }
+    .game .game-content h2 {
+        margin-bottom: 50px;
+    }
+    .carbon .carbon-content {
+        width: 70%;
+    }
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .boxes {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    .btn {
+        padding: 5px 14px;
+        font-size: 15px;
+    }
+    body {
+        margin: 10px 30px;
+    }
+}
